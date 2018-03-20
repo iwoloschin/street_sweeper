@@ -1,18 +1,22 @@
 # Street Sweeper
 This is a simple tool for those of us who have to park their car on the street and need a little reminder about when to move their car for street sweeping.  Currently Street Sweeper is designed to work well in [Somerville, MA](http://www.somervillema.gov/sweeping), but this could be easily extended to match more cities.  Street Sweeper will output a series of ICS files that can be easily imported into Google Calendar.
 
-<div class="alert alert-warning">
+**WARNING**
+
 The street_sweeper program is not maintained by the City of Somerville, MA.  Any bugs or omissions should be reported to this project's [issues](https://github.com/iwoloschin/street_sweeper/issues) page, not to Somerville 311.  Always double check posted signs before parking, any parking tickets received are always the responsibility of the vehicle owner.
-</alert>
+
+**WARNING**
 
 # Import ICS Files into Google Calendar
 Pre-generated ICS files are available for Somerville, MA residents for standard 8am-12pm street sweeping schedule, covering the standard April to December street sweeping period.  There are ten generated files, "Odd" (First & Third day) & "Even" (Second & Fourth day) for each day of the week.  Somerville does not sweep streets on federal or state holidays or the Fifth weekday (if any) of the month.  Typically most streets in Somerville have a different schedule for each side of the street, so most folks will need to select two ICS files.  Look at the street signs outside for the best information on what the schedule is on your street, online resources may not always match and the street signs are assumed to always be correct.
 
 The below instructions assume you already have a Google Account setup for yourself.  If you do not have a Google Account please set that up first.
 
-<div class="alert alert-warning">
+**WARNING**
+
 The pre-generated files may have errors, the vehicle owner must always double check against posted signage and is always responsible for any parking tickets that may be incurred.
-</alert>
+
+**WARNING**
 
 ## Getting the ICS Files
 The ICS files for 2018 can be found [here](https://github.com/iwoloschin/street_sweeper/tree/master/2018).  Pick the two that match your street, or more if you live near an area that has streets on different schedules.
