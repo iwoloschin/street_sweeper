@@ -1,14 +1,18 @@
 # Street Sweeper
 This is a simple tool for those of us who have to park their car on the street and need a little reminder about when to move their car for street sweeping.  Currently Street Sweeper is designed to work well in [Somerville, MA](http://www.somervillema.gov/sweeping), but this could be easily extended to match more cities.  Street Sweeper will output a series of ICS files that can be easily imported into Google Calendar.
 
+<div class="alert alert-warning">
+The street_sweeper program is not maintained by the City of Somerville, MA.  Any bugs or omissions should be reported to this project's [issues](https://github.com/iwoloschin/street_sweeper/issues) page, not to Somerville 311.  Always double check posted signs before parking, any parking tickets received are always the responsibility of the vehicle owner.
+</alert>
+
 # Import ICS Files into Google Calendar
-Pre-generated ICS files are available for Somerville, MA residents for standard 8am-12pm street sweeping schedule.  There are ten generated files, "Odd" (First & Third day) & "Even" (Second & Fourth day) for each day of the week.  Somerville does not sweep streets on the Fifth weekday (if any) of the month.  Typically most streets in Somerville have a different schedule for each side of the street, so most folks will need to select two ICS files.  Look at the street signs outside for the best information on what the schedule is on your street, online resources may not always match and the street signs are assumed to always be correct.
+Pre-generated ICS files are available for Somerville, MA residents for standard 8am-12pm street sweeping schedule, covering the standard April to December street sweeping period.  There are ten generated files, "Odd" (First & Third day) & "Even" (Second & Fourth day) for each day of the week.  Somerville does not sweep streets on federal or state holidays or the Fifth weekday (if any) of the month.  Typically most streets in Somerville have a different schedule for each side of the street, so most folks will need to select two ICS files.  Look at the street signs outside for the best information on what the schedule is on your street, online resources may not always match and the street signs are assumed to always be correct.
 
 The below instructions assume you already have a Google Account setup for yourself.  If you do not have a Google Account please set that up first.
 
-<aside class="warning">
-You must replace `meowmeowmeow` with your personal API key.
-</aside>
+<div class="alert alert-warning">
+The pre-generated files may have errors, the vehicle owner must always double check against posted signage and is always responsible for any parking tickets that may be incurred.
+</alert>
 
 ## Getting the ICS Files
 The ICS files for 2018 can be found [here](https://github.com/iwoloschin/street_sweeper/tree/master/2018).  Pick the two that match your street, or more if you live near an area that has streets on different schedules.
@@ -23,23 +27,8 @@ Your new calendar will now be on the left side, click on the new calendar's name
 ## Importing ICS Files into Your Calendar
 Click the gear icon on the top right and click "Settings".  In the settings menu click the "Import & Export" button.  Select the first ICS file from your computer and pick the appropriate calendar to import into, then click the "Import" button.  Repeat for as many ICS files as you have to import.
 
-## Usage
+# Generating Custom ICS Files
+If you need different ICS files you can `pip3 install` it via git:
 ```
-$ ./street_sweeper.py -h
-usage: street_sweeper.py [-h] [-y YEAR] [-w {odd,even} [{odd,even} ...]]
-                         [-d {Mon,Tue,Wed,Thu,Fri} [{Mon,Tue,Wed,Thu,Fri} ...]]
-                         [-s START] [-e END]
-
-Generate street sweeping calendar events
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -y YEAR, --year YEAR
-  -w {odd,even} [{odd,even} ...], --week {odd,even} [{odd,even} ...]
-                        1st & 3rd (Odd) or 2nd & 4th (Even) Weeks?
-  -d {Mon,Tue,Wed,Thu,Fri} [{Mon,Tue,Wed,Thu,Fri} ...], --day {Mon,Tue,Wed,Thu,Fri} [{Mon,Tue,Wed,Thu,Fri} ...]
-                        Day of street sweeping
-  -s START, --start START
-                        Street sweeping start time (24 hr)
-  -e END, --end END     Street sweeping end time (24 hr)
-  ```
+pip3 install git+https://github.com/iwoloschin/street_sweeper.git
+```
