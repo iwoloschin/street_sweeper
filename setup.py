@@ -1,3 +1,4 @@
+"""Street Sweeper setup.py."""
 from setuptools import setup
 
 
@@ -11,6 +12,7 @@ setup(
     author_email='ian@woloschin.com',
     license='MIT',
     install_requires=[
+        'holidays',
         'ics',
     ],
     entry_points={

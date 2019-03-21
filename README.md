@@ -19,7 +19,7 @@ The pre-generated files may have errors, the vehicle owner must always double ch
 **WARNING**
 
 ## Getting the ICS Files
-The ICS files for 2018 can be found [here](https://github.com/iwoloschin/street_sweeper/tree/master/2018).  Pick the two that match your street, or more if you live near an area that has streets on different schedules.
+The ICS files for 2019 can be found [here](https://github.com/iwoloschin/street_sweeper/tree/master/2019).  Pick the two that match your street, or more if you live near an area that has streets on different schedules.
 
 ## Creating a New Google Calendar
 I've found street sweeping reminders work best in their own calendar, they get their own color on the main display and can have calendar specific notifications for all events by default.  This setup only needs to be done once, in the future this calendar can simply be reused.
